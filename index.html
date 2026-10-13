@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="description" content="Discover Saffron & Stone, a neighborhood kitchen serving seasonal plates, thoughtfully chosen wine, and warm hospitality.">
+    <title>Saffron & Stone — A Neighborhood Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="announcement">
+      <span>Good food. Good company. Right around the corner.</span>
+      <a href="#visit">Find us in Portland, Oregon <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Saffron and Stone home">
+        <span class="wordmark-icon" aria-hidden="true">S<span>&</span>S</span>
+        <span class="wordmark-name">SAFFRON <span>&</span> STONE</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+        <a href="#story">Our story</a>
+        <a href="#menu">The menu</a>
+        <a href="#visit">Find us</a>
+        <a class="nav-reserve" href="#reserve">Book a table <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="A warmly lit restaurant dining room set for dinner"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span></span> A NEIGHBORHOOD KITCHEN · PORTLAND, OR</p>
+          <h1 id="hero-title">Come hungry.<br><em>Leave happy.</em></h1>
+          <p class="hero-description">Seasonal plates, a little something to sip, and a seat saved just for you.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#reserve">Book your table <span aria-hidden="true">↗</span></a>
+            <a class="text-link text-link-light" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-caption">
+          <span>DINNER, THE WAY IT SHOULD BE</span>
+          <span>45°31'12.0"N &nbsp; 122°40'55.2"W</span>
+        </div>
+        <a class="hero-scroll" href="#story" aria-label="Scroll to our story"><span></span> SCROLL TO DISCOVER</a>
+      </section>
+
+      <section class="intro section-pad" id="story" aria-labelledby="intro-title">
+        <div class="intro-kicker">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> PULL UP A CHAIR</span>
+          <span class="section-number">01 / THE FEELING</span>
+        </div>
+        <div class="intro-copy">
+          <h2 id="intro-title">A little neighborhood place with <em>a lot of heart.</em></h2>
+          <div class="intro-aside">
+            <p>Some things just go together: a table full of friends, something delicious in the middle, and nowhere else you need to be. That's what we're here for.</p>
+            <a class="text-link" href="#visit">Get to know us <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="intro-image-wrap">
+          <img class="intro-image" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1600&q=85" alt="Friends sharing a meal around a restaurant table" loading="lazy">
+          <span class="image-note"><span aria-hidden="true">✳</span> MADE FOR GATHERING</span>
+        </div>
+      </section>
+
+      <section class="menu-section section-pad" id="menu" aria-labelledby="menu-title">
+        <div class="menu-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> SOMETHING FOR EVERYONE</p>
+            <h2 id="menu-title">Made with care.<br><em>Best shared.</em></h2>
+          </div>
+          <p class="menu-intro">A peek at what's cooking. Our menu changes with the seasons, but there's always something worth coming back for.</p>
+        </div>
+        <div class="menu-cards">
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85" alt="Colorful market greens and seasonal vegetables" loading="lazy">
+              <span class="menu-card-index">01</span>
+            </div>
+            <div class="menu-card-meta"><span>FRESH FROM THE MARKET</span><span>01 — 04</span></div>
+            <h3>A good start</h3>
+            <p>Little plates, garden greens, and a reason to order one more for the table.</p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="A beautifully plated seasonal dinner" loading="lazy">
+              <span class="menu-card-index">02</span>
+            </div>
+            <div class="menu-card-meta"><span>STRAIGHT FROM THE KITCHEN</span><span>05 — 09</span></div>
+            <h3>The main event</h3>
+            <p>Seasonal favorites with a few familiar comforts and something a little new.</p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=85" alt="Freshly made dessert finished with a sweet glaze" loading="lazy">
+              <span class="menu-card-index">03</span>
+            </div>
+            <div class="menu-card-meta"><span>SAVE A LITTLE ROOM</span><span>10 — 12</span></div>
+            <h3>The sweet finish</h3>
+            <p>Made in-house and absolutely worth saying “just one bite” for.</p>
+          </article>
+        </div>
+        <p class="menu-note">Our dishes change often. Please ask us about today's menu and any dietary needs.</p>
+      </section>
+
+      <section class="quote-section" aria-label="A note from our kitchen">
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>The best nights aren't planned down to the minute. They're made around the table.</blockquote>
+        <span class="quote-attribution">A LITTLE NOTE FROM OUR KITCHEN</span>
+      </section>
+
+      <section class="visit-section section-pad" id="visit" aria-labelledby="visit-title">
+        <div class="visit-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR SEAT IS WAITING</p>
+          <h2 id="visit-title">Right here.<br><em>Right on time.</em></h2>
+          <p class="visit-description">Come as you are. Bring a friend, bring the whole crew, or just bring your appetite.</p>
+          <a class="text-link" href="https://maps.google.com/?q=1234+SE+Division+Street+Portland+OR" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">↗</span></a>
+          <div class="visit-details">
+            <div>
+              <span class="eyebrow">COME FIND US</span>
+              <address>1234 SE Division Street<br>Portland, OR 97202</address>
+              <a class="contact-link" href="tel:+15035550148">(503) 555-0148</a>
+            </div>
+            <div>
+              <span class="eyebrow">WHEN WE'RE HERE</span>
+              <p>Tuesday – Thursday <span>4–9 pm</span><br>Friday – Saturday <span>4–10 pm</span><br>Sunday – Monday <span>Closed</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="visit-image-wrap">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=85" alt="An inviting candlelit table ready for dinner" loading="lazy">
+          <span class="visit-image-tag">A PLACE AT THE TABLE</span>
+        </div>
+      </section>
+
+      <section class="reserve-section" id="reserve" aria-labelledby="reserve-title">
+        <div class="reserve-inner">
+          <div class="reserve-heading">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> MAKE AN EVENING OF IT</p>
+            <h2 id="reserve-title">Let's save you<br><em>a seat.</em></h2>
+            <p>Tell us when you're coming, and we'll help get the table ready.</p>
+          </div>
+          <form class="reservation-form" id="reservation-form">
+            <label>
+              Your name
+              <input name="name" type="text" autocomplete="name" placeholder="First and last name" required>
+            </label>
+            <div class="form-row">
+              <label>
+                Date
+                <input name="date" type="date" required>
+              </label>
+              <label>
+                Time
+                <select name="time" required>
+                  <option value="" disabled selected>Choose a time</option>
+                  <option>4:00 pm</option><option>4:30 pm</option><option>5:00 pm</option>
+                  <option>5:30 pm</option><option>6:00 pm</option><option>6:30 pm</option>
+                  <option>7:00 pm</option><option>7:30 pm</option><option>8:00 pm</option>
+                  <option>8:30 pm</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-row">
+              <label>
+                Party size
+                <select name="guests" required>
+                  <option value="" disabled selected>How many?</option>
+                  <option>1 guest</option><option>2 guests</option><option>3 guests</option>
+                  <option>4 guests</option><option>5 guests</option><option>6 guests</option>
+                  <option>7+ guests</option>
+                </select>
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              </label>
+            </div>
+            <button class="button button-dark" type="submit">Request a reservation <span aria-hidden="true">↗</span></button>
+            <p class="form-note">We'll open your email app with your request. Your reservation isn't confirmed until we get back to you.</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="#" aria-label="Saffron and Stone home">
+          <span class="wordmark-icon" aria-hidden="true">S<span>&</span>S</span>
+          <span class="wordmark-name">SAFFRON <span>&</span> STONE</span>
+        </a>
+        <p>Good food, good company.<br>See you around the table.</p>
+        <a class="footer-reserve" href="#reserve">SAVE YOUR SEAT <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> SAFFRON & STONE</span>
+        <span>1234 SE DIVISION STREET · PORTLAND, OR</span>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer">FOLLOW ALONG ON INSTAGRAM <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
