@@ -182,9 +182,16 @@ h1, h2, h3, p { margin-top: 0; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .button-dark { width: 100%; justify-content: space-between; color: white; background: var(--green); }
 .button-dark:hover { color: var(--ink); background: #d7d4c8; }
-.form-note, .form-status { margin: -5px 0 0; color: #818177; font-size: 9px; line-height: 1.7; }
-.form-status { color: #3c5538; }
-.form-status:empty { display: none; }
+.form-note { margin: -5px 0 0; color: #818177; font-size: 9px; line-height: 1.7; }
+.reservation-dialog { position: fixed; width: min(440px, calc(100% - 36px)); max-width: none; max-height: calc(100% - 36px); padding: 39px; border: 1px solid var(--line); color: var(--ink); background: var(--paper); }
+.reservation-dialog[open] { animation: content-reveal .2s ease-out both; }
+.reservation-dialog::backdrop { background: rgba(26, 28, 23, .64); backdrop-filter: blur(3px); }
+.dialog-close { position: absolute; top: 12px; right: 15px; padding: 3px 7px; border: 0; color: var(--muted); background: transparent; font-size: 25px; line-height: 1; cursor: pointer; }
+.reservation-dialog h2 { margin: 17px 0 12px; font-family: var(--serif); font-size: clamp(36px, 9vw, 47px); font-weight: 400; letter-spacing: -.045em; line-height: 1.15; }
+.reservation-dialog h2 em { color: #7a806c; }
+.dialog-description { margin-bottom: 11px; color: var(--green); font-size: 12px; font-weight: 600; }
+.dialog-note { margin-bottom: 20px; color: #696a61; font-size: 11px; line-height: 1.8; }
+.dialog-send { text-decoration: none; }
 
 .site-footer { padding: 43px 7.2% 20px; color: white; background: #25271f; }
 .footer-top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 35px; }
@@ -266,6 +273,7 @@ h1, h2, h3, p { margin-top: 0; }
   .reserve-inner { grid-template-columns: 1fr; gap: 30px; }
   .reserve-heading h2 { margin-top: 16px; }
   .reservation-form { gap: 14px; }
+  .reservation-dialog { padding: 34px 25px 27px; }
   .site-footer { padding: 34px 7% 19px; }
   .footer-top { align-items: flex-start; flex-wrap: wrap; gap: 22px; padding-bottom: 25px; }
   .footer-top > p { order: 3; width: 100%; font-size: 16px; }
